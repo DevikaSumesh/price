@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Bargain - Chetan Bhagat Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #C5A9A0, #7B4D66);
+        }
+        .container {
+            width: 75%;
+            margin: auto;
+            background: #F5F0E1;
+            padding: 20px;
+            margin-left: 10%; /* Move main body to the left */
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: #6B3E42;
+            color: white;
+        }
+        .search-box {
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            width: 250px;
+        }
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .book-card {
+            background: #D0A3B2;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .book-card img {
+            width: 150px;
+            height: auto;
+            border: 3px solid #000;
+        }
+        .book-card button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            border: none;
+            background: #6B3E42;
+            color: white;
+            cursor: pointer;
+        }
+        .sidebar {
+            position: absolute;
+            right: 20px;
+            top: 180px;
+            width: 100px;
+            padding: 15px;
+            background: linear-gradient(to bottom, #D0A3B2, #7B4D66);
+            height: 350px;
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Book Bargain</h1>
+        <input type="text" class="search-box" placeholder="Search books, authors, genres">
+    </div>
+    <div class="container">
+        <h2>Chetan Bhagat</h2>
+        <div class="book-grid">
+            <div class="book-card">
+                <img src="400_days.jpg" alt="400 Days">
+                <p>400 Days</p>
+                <button>View</button>
+            </div>
+            <div class="book-card">
+                <img src="five_point_someone.jpg" alt="Five Point Someone">
+                <p>Five Point Someone</p>
+                <button>View</button>
+            </div>
+            <div class="book-card">
+                <img src="one_indian_girl.jpg" alt="One Indian Girl">
+                <p>One Indian Girl</p>
+                <button>View</button>
+            </div>
+            <div class="book-card">
+                <img src="girl_in_room_105.jpg" alt="The Girl in Room 105">
+                <p>The Girl in Room 105</p>
+                <button>View</button>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <h3>Filters</h3>
+        <p>> Ratings (high to low)</p>
+        <p>> Custom Price</p>
+        <p>Min <input type="range" min="0" max="60"> Max</p>
+    </div>
+    <p style="text-align: center;">**footer</p>
+</body>
+</html>
