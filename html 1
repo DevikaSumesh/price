@@ -13,10 +13,12 @@
         }
         header {
             background: #5a2835;
-            color: white;
             padding: 15px;
-            text-align: center;
-            font-size: 24px;
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            height: 60px;
         }
         nav {
             display: flex;
@@ -39,11 +41,21 @@
             width: 300px;
         }
         .hero {
-            background: url('bookshelf.jpg') no-repeat center;
+            background: url('hero.jpeg') no-repeat center;
             background-size: cover;
             text-align: center;
-            padding: 80px 20px;
-            color: black;
+            padding: 50px 20px;
+            color: white;
+            width: 70%; /* Broader hero section */
+            height: 200px; /* Less tall */
+            border-radius: 10px;
+            position: absolute;
+            top: 229px; /* Moved 1cm upwards */
+            left: 0;
+            opacity: 0.8; /* Reduced opacity */
+        }
+        .hero h1 {
+            color: #e0e0e0; /* Changed to a light color for visibility */
         }
         .hero button {
             background: #3a1d25;
@@ -56,13 +68,14 @@
         .sidebar {
             position: absolute;
             right: 10px;
-            top: 150px;
+            top: 180px; /* Moved downwards by 0.35cm */
             color: black;
             font-size: 18px;
         }
         .section {
             padding: 40px;
             text-align: center;
+            margin-top: 300px; /* Adjusted to align with hero changes */
         }
         .books {
             display: flex;
@@ -89,7 +102,9 @@
     </style>
 </head>
 <body>
-    <header>Book Bargain</header>
+    <header>
+        <img src="logo.jpeg" alt="Book Bargain Logo" class="logo">
+    </header>
     <nav>
         <a href="#">Home</a>
         <a href="#">Categories</a>
@@ -99,16 +114,21 @@
     <div class="search-bar">
         <input type="text" placeholder="Search by book, author, genre">
     </div>
+
+    <!-- Hero Section Adjusted -->
     <section class="hero">
         <h1>Featured Books of February</h1>
         <button>Explore now</button>
     </section>
+
+    <!-- Sidebar with Black Text -->
     <div class="sidebar">
-        <p>>Best Sellers</p>
-        <p>>Author</p>
-        <p>>Genre</p>
-        <p>>Language</p>
+        <p>> Best Sellers</p>
+        <p>> Author</p>
+        <p>> Genre</p>
+        <p>> Language</p>
     </div>
+
     <section class="section">
         <h2>Books in Focus</h2>
         <div class="books">
