@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Bargain - Chetan Bhagat Collection</title>
+    <title>Chetan Bhagat Collection</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -25,6 +25,10 @@
             padding: 15px;
             background: #6B3E42;
             color: white;
+        }
+        .logo {
+            width: 100px; /* Adjust width as necessary */
+            height: auto;
         }
         .search-box {
             padding: 5px;
@@ -72,7 +76,7 @@
 </head>
 <body>
     <div class="header">
-        <h1>Book Bargain</h1>
+        <img src="logo.jpeg" alt="Logo" class="logo">
         <input type="text" class="search-box" placeholder="Search books, authors, genres">
     </div>
     <div class="container">
